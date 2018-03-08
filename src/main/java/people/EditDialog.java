@@ -18,6 +18,8 @@ public class EditDialog extends JDialog {
     private MainFrame listener;
 
     public EditDialog(MainFrame listener) {
+        setModal(true);
+        
         this.listener = listener;
 
         JPanel panel = new JPanel();
